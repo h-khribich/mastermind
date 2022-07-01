@@ -1,34 +1,115 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Mastermind</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <script>
+       
+    </script>
+    <title>Document</title>
 </head>
 <body>
-  <div class="wrapper">
-    <audio controls autoplay loop>
-      <source src="https://github.com/h-khribich/mastermind/main/assets/etherealGrooveRemixBrylie.mp3?raw=true" type="audio/mpeg">
-      Your browser does not support the audio element.
+    <audio id="audio" controls autoplay loop>
+        <source src="./assets/bgmusic.mp3" type="audio/mp3" >
     </audio>
-    <div class="attribution-block"><a href="http://dig.ccmixter.org/files/brylie/65097">Music: Ethereal groove remix</a> by Brylie Christopher Oxley (c) copyright 2022 Licensed under a Creative Commons <a href="http://creativecommons.org/licenses/by-nc/3.0/">Attribution Noncommercial  (3.0)</a> license. </div>
-    <h1>Mastermind</h1>
+      
+    <div class="display">
+        <div id="welcome-screen" class="play-menu">
+            <h1 class="welcome-text">Become the Mindmaster!</h1>
+            <input type="text" placeholder="Enter Your Name">
+            <button class="go-play-btn"><span>PLAY</span></button>
+        </div>
+    </div>
+    <div class="play-display">
+    <div class="play-screen">
+        <div class="color-table">
+            <div class="color-table-colors">
+                <div id="random" class="table-color-circle"></div>
+                <div id="random" class="table-color-circle"></div>
+                <div id="random" class="table-color-circle"></div>
+                <div id="random" class="table-color-circle"></div>
+                <div id="random" class="table-color-circle"></div>
+            </div>
+        </div>
+        <div class="play-screen-section">
+            <div class="color-columns">
+                <div class="random-colors">
 
-    <main>
-      <div class="selection">
-        <span class="selection selection-1"></span>
-        <span class="selection selection-2"></span>
-        <span class="selection selection-3"></span>
-        <span class="selection selection-4"></span>
-        <span class="selection selection-5"></span>
-      </div>
-      <div class="board">
+                </div>
+                <div class="exemple-colors">
+                    <div class="color-exemples-row">
+                        <div class="circle-color one"></div>
+                        <div class="circle-color two"></div>
+                        <div class="circle-color three"></div>
+                        <div class="circle-color four"></div>
+                        <div class="circle-color five"></div>
+                        <div class="circle-color six"></div>
+                    </div>
+                    <div class="color-exemples-row">
+                        <div class="circle-color one"></div>
+                        <div class="circle-color two"></div>
+                        <div class="circle-color three"></div>
+                        <div class="circle-color four"></div>
+                        <div class="circle-color five"></div>
+                        <div class="circle-color six"></div>
+                    </div>
+                    <div class="color-exemples-row">
+                        <div class="circle-color one"></div>
+                        <div class="circle-color two"></div>
+                        <div class="circle-color three"></div>
+                        <div class="circle-color four"></div>
+                        <div class="circle-color five"></div>
+                        <div class="circle-color six"></div>
+                    </div>
+                    <div class="color-exemples-row">
+                        <div class="circle-color one"></div>
+                        <div class="circle-color two"></div>
+                        <div class="circle-color three"></div>
+                        <div class="circle-color four"></div>
+                        <div class="circle-color five"></div>
+                        <div class="circle-color six"></div>
+                    </div>
+                    <div class="color-exemples-row">
+                        <div class="circle-color one"></div>
+                        <div class="circle-color two"></div>
+                        <div class="circle-color three"></div>
+                        <div class="circle-color four"></div>
+                        <div class="circle-color five"></div>
+                        <div class="circle-color six"></div>
+                    </div>
+                    <div class="color-exemples-row">
+                        <div class="circle-color one"></div>
+                        <div class="circle-color two"></div>
+                        <div class="circle-color three"></div>
+                        <div class="circle-color four"></div>
+                        <div class="circle-color five"></div>
+                        <div class="circle-color six"></div>
+                    </div>
+                    <hr class="main-line">
+                </div>
+                <div class="answered-colors">
+                    <div class="color-table-colors answered-color-box">
+                        <div id="random" class="table-color-circle"></div>
+                        <div id="random" class="table-color-circle"></div>
+                        <div id="random" class="table-color-circle"></div>
+                        <div id="random" class="table-color-circle"></div>
+                        <div id="random" class="table-color-circle"></div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="player-name">dd</h2>
+        </div>
+        <button class="replay-btn"><span>Replay</span></button>
+    </div>
+</div>
 
-      </div>
-      <button class="essayer">Essayer</button>
-    </main>
-  </div>
+
+
+    <script src="./app.js"></script>
 </body>
 </html>
